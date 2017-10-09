@@ -61,7 +61,9 @@ attributes, or other hacks like that.
 
 #### Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
 
-*Not answered yet*
+To avoid Flash of Unstyled Content. How do you avoid FOUC?
+
+To avoid FOUC, the styles should be placed in order that they can be loaded and applied in the same rendering process as HTML elements do. The easiest way is to place them in the head, and avoid applying styles by scripts at the first load.
 
 #### What is progressive rendering?
 
